@@ -10,59 +10,63 @@
 
         <Button
             android:id="@+id/toast_button"
-            android:layout_width="417dp"
-            android:layout_height="63dp"
-            android:layout_marginTop="48dp"
+            android:layout_width="174dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginBottom="16dp"
             android:text="Toast"
             android:textAlignment="center"
             android:textColor="@color/white"
             app:backgroundTint="#5d1049"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintBottom_toTopOf="@+id/countup_button"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.203"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
         <Button
             android:id="@+id/countup_button"
-            android:layout_width="405dp"
-            android:layout_height="59dp"
+            android:layout_width="173dp"
+            android:layout_height="74dp"
+            android:layout_marginBottom="16dp"
             android:text="Count Up"
             android:textAlignment="center"
             android:textColor="@color/white"
             app:backgroundTint="#5d1049"
             app:layout_constraintBottom_toTopOf="@+id/countdown_button"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.189"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/countdown_button"
-            android:layout_width="410dp"
-            android:layout_height="61dp"
-            android:layout_marginBottom="16dp"
+            android:layout_width="173dp"
+            android:layout_height="72dp"
+            android:layout_marginBottom="4dp"
             android:text="Count Down"
-            android:textAlignment="gravity"
+            android:textAlignment="center"
             android:textColor="@color/white"
             app:backgroundTint="#5d1049"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.238"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="389dp"
-            android:layout_height="459dp"
-            android:layout_marginTop="12dp"
-            android:background="#fedbd0"
-            android:text="0"
+            android:layout_width="444dp"
+            android:layout_height="262dp"
+            android:layout_marginBottom="16dp"
+            android:background="#feeae6"
             android:gravity="center"
+            android:text="0"
             android:textAlignment="center"
             android:textColor="#442c2e"
             android:textSize="100sp"
-            app:layout_constraintBottom_toTopOf="@+id/countup_button"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toast_button"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintHorizontal_bias="0.942"
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
